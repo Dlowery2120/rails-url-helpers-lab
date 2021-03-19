@@ -9,6 +9,11 @@ class StudentsController < ApplicationController
   end
 
   private
+    get '/students'
+    erb :index.html
+  end
+
+
 
     def set_student
       @student = Student.find(params[:id])
